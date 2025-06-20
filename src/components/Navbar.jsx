@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
+<<<<<<< HEAD
    <div className="w-full px-4 py-5 flex flex-col sm:flex-row items-center bg-white shadow-md">
   {/* Logo */}
   <div onClick={() => navigate("/")} className="cursor-pointer mb-4 sm:mb-0 sm:mr-auto">
@@ -21,6 +22,27 @@ const Navbar = () => {
     </li>
   </ul>
 </div>
+=======
+    <div className="container-fluid p-5 flex justify-center items-center bg-white ">
+      <div onClick={()=>navigate("/")} className="cursor-pointer">
+        
+         <h2 className="dreamsnap text-pink-500">
+              Dreamsnap
+         </h2>
+        
+      </div>
+      <div className="ms-auto">
+        <ul className="inline">
+          <li className="inline  text-white mx-2 bg-pink-500 p-2  rounded-2xl"> 
+            <Link to="/DreamSnap">create now</Link>
+          </li>
+          <li className="inline ms-2 p-2 px-3 text-white rounded-2xl bg-black">
+            <Link to="About"> about</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+>>>>>>> 35f20bc7ec5ca7ffd8d951db9eb1ea59bb8023eb
   );
 };
 
