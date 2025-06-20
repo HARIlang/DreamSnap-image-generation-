@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+
+
+
+*{
+    text-transform: capitalize;
+    /* font-family: "Playwrite DK Loopet", cursive; */
+    font-family: "Happy Monkey", system-ui;
+
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.dreamsnap {
+  font-size: 27px;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 4px;
+  font-weight: bold;
+
+  animation: float 2s ease-in-out infinite;
+  /* box-shadow: -10px -6px 165px 0px rgba(236,72,153,0.75);
+-webkit-box-shadow: -10px -6px 165px 0px rgba(236,72,153,0.75);
+-moz-box-shadow: -10px -6px 165px 0px rgba(236,72,153,0.75); */
+ text-shadow: 0 0 20px rgba(236, 72, 153, 0.75);
+}
+/* Custom styles for Swiper navigation buttons */
+/* Make Swiper navigation arrows small and white */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  
+  width: 25px;
+  height: 25px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px !important;
+}
+body{
+    background-color: black;
+}
+.snap,legend{
+    font-family: "Playwrite DK Loopet", cursive; 
+    
+    
+}
